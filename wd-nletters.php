@@ -27,7 +27,7 @@ function github_plugin_updater_test_init() {
       'api_url' => 'https://api.github.com/repos/benfavre/wd-mailing',
       'raw_url' => 'https://raw.github.com/benfavre/wd-mailing/master',
       'github_url' => 'https://github.com/benfavre/wd-mailing',
-      'zip_url' => 'https://github.com/benfavre/wd-mailingr/zipball/master',
+      'zip_url' => 'https://github.com/benfavre/wd-mailing/zipball/master',
       'sslverify' => true,
       'requires' => '3.0',
       'tested' => '3.5',
