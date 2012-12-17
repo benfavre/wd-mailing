@@ -15,27 +15,27 @@ define('WDNLETTER_VERSION', '1.5');
 
 add_action('init', 'github_plugin_updater_test_init');
 function github_plugin_updater_test_init() {
+  include_once (WDNLETTER_DIR . '/_github-updater/updater.php');
 
-include_once (WDNLETTER_DIR . '/_github-updater/updater.php');
+  define('WP_GITHUB_FORCE_UPDATE', true);
 
-define('WP_GITHUB_FORCE_UPDATE', true);
+  if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
 
-if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
-
-  $config = array(
-    'slug' => plugin_basename(__FILE__),
-    'proper_folder_name' => 'wd-mailing',
-    'api_url' => 'https://api.github.com/repos/benfavre/wd-mailing',
-    'raw_url' => 'https://raw.github.com/benfavre/wd-mailing/master',
-    'github_url' => 'https://github.com/benfavre/wd-mailing',
-    'zip_url' => 'https://github.com/benfavre/wd-mailingr/zipball/master',
-    'sslverify' => true,
-    'requires' => '3.0',
-    'tested' => '3.5',
-    'readme' => 'README.md',
-    'access_token' => '',
-  );
-  new WPGitHubUpdater($config);
+    $config = array(
+      'slug' => plugin_basename(__FILE__),
+      'proper_folder_name' => 'wd-mailing',
+      'api_url' => 'https://api.github.com/repos/benfavre/wd-mailing',
+      'raw_url' => 'https://raw.github.com/benfavre/wd-mailing/master',
+      'github_url' => 'https://github.com/benfavre/wd-mailing',
+      'zip_url' => 'https://github.com/benfavre/wd-mailingr/zipball/master',
+      'sslverify' => true,
+      'requires' => '3.0',
+      'tested' => '3.5',
+      'readme' => 'README.md',
+      'access_token' => '',
+    );
+    new WPGitHubUpdater($config);
+  }
 }
 
 include_once( WDNLETTER_DIR . '/inc/emogrifier.php');
