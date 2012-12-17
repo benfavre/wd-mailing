@@ -986,8 +986,4 @@ register_field_group(array (
   ),
   'menu_order' => 1,
 ));
-
-
 }
-
-?>
