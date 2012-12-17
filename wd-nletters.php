@@ -3,14 +3,14 @@
 Plugin Name: WD Newsletter plugin
 Plugin URI: http://www.webdesign29.net/
 Description: Visually create emails to send with the Mailpress Plugin
-Version: 1.1
+Version: 1.2
 Author: Benjamin Favre
 Author URI: http://www.webdesign29.net/
 Copyright 2012  Benjamin Favre  (email : ben@webdesign29.net)
 */
 define('WDNLETTER_URL', plugin_dir_url(__FILE__));
 define('WDNLETTER_DIR', plugin_dir_path(__FILE__));
-define('WDNLETTER_VERSION', '1.1');
+define('WDNLETTER_VERSION', '1.2');
 
 
 add_action('init', 'github_plugin_updater_test_init');
