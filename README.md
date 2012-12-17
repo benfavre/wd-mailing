@@ -1,7 +1,10 @@
-`~Current Version:1.0~`
+`~Current Version:1.1~`
 
 Changelog
 ===========
+
+### 1.1
+* Testing GitHub Updater Class
 
 ### 1.0
 * Initial Public Release
