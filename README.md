@@ -1,7 +1,10 @@
-`~Current Version:1.4~`
+`~Current Version:1.8~`
 
 Changelog
 ===========
+
+### 1.5
+* Seriously this is the last test * 2
 
 ### 1.4
 * Seriously this is the last test
